@@ -1,5 +1,5 @@
 import { defineEventHandler, readBody, sendError, createError } from 'h3';
-import { carPartSchema } from '~/server/models/carPart';
+import { carPartSchema } from '~/server/models/CarPart';
 import { connectToDatabase } from '~/server/db';
 
 export default defineEventHandler(async (event) => {
