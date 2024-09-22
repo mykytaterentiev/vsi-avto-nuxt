@@ -4,11 +4,15 @@ export default defineNuxtConfig({
     plugins: ['~/server/middleware/cors.ts'],
   },
   css: ['~/assets/css/tailwind.css'],
+  build: {
+    transpile: ['vue-toastification'],
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+    
   },
   app: {
     head: {
