@@ -33,8 +33,7 @@
   
   <script setup>
   import { ref, defineEmits, defineProps } from 'vue';
-  import * as pkg from 'vue-toastification'; // Import all from vue-toastification
-  const { useToast } = pkg;
+  import { useToast } from 'vue-toastification';
   
   // Accept the isVisible prop
   const props = defineProps({

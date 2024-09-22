@@ -33,8 +33,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import * as pkg from 'vue-toastification'; // Import all from vue-toastification
-const { useToast } = pkg; 
+import { useToast } from 'vue-toastification';
 import NavBar from '~/components/NavBar.vue';
 import Footer from '~/components/Footer.vue';
 import { contactSchema } from '~/server/models/contactSchema'; // Import the Zod validation schema
