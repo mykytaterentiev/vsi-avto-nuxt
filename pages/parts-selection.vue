@@ -53,7 +53,7 @@
 import { ref } from 'vue';
 import { useToast } from 'vue-toastification';
 import NavBar from '~/components/NavBar.vue';
-import { carPartSchema } from '~/server/models/carPart'; // Import the validation schema
+import { carPartSchema } from '~/server/models/CarPart';
 
 const toast = useToast();
 
