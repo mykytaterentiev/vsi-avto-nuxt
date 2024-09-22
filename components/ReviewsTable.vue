@@ -23,6 +23,7 @@
   const columnDefs = ref([
     { field: 'name', headerName: 'Name', sortable: true, filter: 'agTextColumnFilter' },
     { field: 'message', headerName: 'Message', sortable: true, filter: 'agTextColumnFilter' },
+    { field: 'createdAt', headerName: 'Created At', sortable: true, sort: 'desc' },
   ]);
   
   const defaultColDef = ref({
@@ -35,6 +36,7 @@
   const ReviewSchema = z.object({
     name: z.string(),
     message: z.string(),
+    createdAt: z.date().default(() => new Date())
   });
   
   type Review = z.infer<typeof ReviewSchema>;
@@ -48,6 +50,7 @@
         rowData.value = response.map((review: any) => ({
           name: review.name,
           message: review.message,
+          createdAt: new Date(review.createdAt),
         }));
       } else {
         rowData.value = [];

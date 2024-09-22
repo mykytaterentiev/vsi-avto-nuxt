@@ -6,10 +6,7 @@ export default defineEventHandler(async (event) => {
   try {
     // Connect to the 'contact' collection
     const collection = await connectToDatabase('contact');
-
-    // Retrieve all contact requests
-    const contactRequests = await collection.find().toArray();
-
+    const contactRequests = await collection.find({}).sort({ createdAt: -1 }).toArray();
     // Return the retrieved contact requests
     return contactRequests;
   } catch (error) {

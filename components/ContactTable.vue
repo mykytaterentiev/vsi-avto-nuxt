@@ -24,6 +24,7 @@
     { field: 'name', headerName: 'Name', sortable: true, filter: 'agTextColumnFilter' },
     { field: 'email', headerName: 'Email', sortable: true, filter: 'agTextColumnFilter' },
     { field: 'message', headerName: 'Message', sortable: true, filter: 'agTextColumnFilter' },
+    { field: 'createdAt', headerName: 'Created At', sortable: true, sort: 'desc' },
   ]);
   
   const defaultColDef = ref({
@@ -38,6 +39,7 @@
     name: z.string(),
     email: z.string(),
     message: z.string(),
+    createdAt: z.date().default(() => new Date())
   });
   
   type Contact = z.infer<typeof ContactSchema>;
@@ -51,6 +53,7 @@
         name: contact.name,
         email: contact.email,
         message: contact.message,
+        createdAt: new Date(contact.createdAt),
       }));
     } catch (error) {
       console.error('Error fetching contacts:', error);

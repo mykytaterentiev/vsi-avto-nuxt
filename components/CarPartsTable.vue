@@ -27,7 +27,8 @@
     { field: 'model', headerName: 'Model', sortable: true, filter: 'agTextColumnFilter' },
     { field: 'year', headerName: 'Year', sortable: true, filter: 'agNumberColumnFilter' },
     { field: 'vin', headerName: 'VIN', sortable: true, filter: 'agTextColumnFilter' },
-    { field: 'request', headerName: 'Request', sortable: true, filter: 'agTextColumnFilter' }
+    { field: 'request', headerName: 'Request', sortable: true, filter: 'agTextColumnFilter' },
+    { field: 'createdAt', headerName: 'Created At', sortable: true, sort: 'desc' },
   ]);
   
   const defaultColDef = ref({
@@ -45,6 +46,7 @@
     year: z.number(),
     vin: z.string(),
     request: z.string(),
+    createdAt: z.date().default(() => new Date())
   });
   
   type CarPart = z.infer<typeof CarPartSchema>;
@@ -63,6 +65,7 @@
         year: part.year,
         vin: part.vin,
         request: part.request,
+        createdAt: new Date(part.createdAt)
       })) : [];
       
     } catch (error) {
