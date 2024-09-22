@@ -38,7 +38,8 @@ import NavBar from '~/components/NavBar.vue';
 import Footer from '~/components/Footer.vue';
 import { contactSchema } from '~/server/models/contactSchema'; // Import the Zod validation schema
 
-const toast = Toastification.useToast(); 
+const { useToast } = Toastification;
+const toast = useToast(); // Call useToast
 
 const formData = ref({
   name: '',

@@ -44,7 +44,8 @@
   });
   
   const emit = defineEmits(['close']);
-  const toast = Toastification.useToast(); 
+  const { useToast } = Toastification;
+  const toast = useToast(); // Call useToast
   
   const formData = ref({
     name: '',

@@ -55,7 +55,8 @@ import Toastification from 'vue-toastification';
 import NavBar from '~/components/NavBar.vue';
 import { carPartSchema } from '~/server/models/CarPart';
 
-const toast = Toastification.useToast(); 
+const { useToast } = Toastification;
+const toast = useToast(); // Call useToast
 
 const formData = ref({
   name: '',
