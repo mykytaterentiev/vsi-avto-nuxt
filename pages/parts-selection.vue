@@ -51,7 +51,8 @@
 
 <script setup>
 import { ref } from 'vue';
-import { useToast } from 'vue-toastification'; 
+import * as pkg from 'vue-toastification'; 
+const { useToast } = pkg;
 import NavBar from '~/components/NavBar.vue';
 import { carPartSchema } from '~/server/models/CarPart';
 
