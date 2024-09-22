@@ -1,17 +1,20 @@
-import { defineEventHandler, sendError, createError } from 'h3';
-import { carPartSchema } from '../../models/CarPart';
-import { connectToDatabase } from '../../db';
+import { defineEventHandler, readBody, sendError, createError } from 'h3';
+import { carPartSchema } from '~/server/models/carPart';
+import { connectToDatabase } from '~/server/db';
 
 export default defineEventHandler(async (event) => {
   try {
     const body = await readBody(event);
+
+    // Validate body using Zod schema
     const validation = carPartSchema.safeParse(body);
 
     if (!validation.success) {
-      throw createError({ statusCode: 400, statusMessage: 'Invalid data' });
+      throw createError({ statusCode: 400, statusMessage: 'Invalid data', data: validation.error.errors });
     }
 
-    const collection = await connectToDatabase();
+    // Connect to the 'carparts' collection
+    const collection = await connectToDatabase('carparts');
     const result = await collection.insertOne(validation.data);
 
     return { message: 'Car part added', result };

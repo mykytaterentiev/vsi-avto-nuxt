@@ -1,14 +1,14 @@
-// server/api/cars/get.ts
+// server/api/reviews/get.ts
 import { defineEventHandler, sendError } from 'h3';
 import { connectToDatabase } from '~/server/db';
 
 export default defineEventHandler(async (event) => {
   try {
-    // Connect to the 'carparts' collection
-    const collection = await connectToDatabase('carparts');
-    const carParts = await collection.find({}).sort({ createdAt: -1 }).toArray();
+    // Connect to the 'reviews' collection
+    const collection = await connectToDatabase('reviews');
+    const reviews = await collection.find({}).sort({ createdAt: -1 }).toArray();
 
-    return carParts;
+    return reviews;
   } catch (error) {
     if (error instanceof Error) {
       sendError(event, error);
