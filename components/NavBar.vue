@@ -35,16 +35,16 @@
       >
         <ul class="flex flex-col space-y-4 p-6 text-dark font-benzin">
           <li>
-            <NuxtLink @click="toggleMenu" to="/" class="block py-2 hover:text-customColors.accent rounded">Home</NuxtLink>
+            <NuxtLink @click="toggleMenu" to="/" class="block py-2 hover:text-customColors.accent rounded">Головна</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="toggleMenu" to="/about" class="block py-2 hover:text-customColors.accent rounded">About</NuxtLink>
+            <NuxtLink @click="toggleMenu" to="/about" class="block py-2 hover:text-customColors.accent rounded">Про нас</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="toggleMenu" to="/services" class="block py-2 hover:text-customColors.accent rounded">Services</NuxtLink>
+            <NuxtLink @click="toggleMenu" to="/services" class="block py-2 hover:text-customColors.accent rounded">Послуги</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="toggleMenu" to="/contact" class="block py-2 hover:text-customColors.accent rounded">Contact</NuxtLink>
+            <NuxtLink @click="toggleMenu" to="/contact" class="block py-2 hover:text-customColors.accent rounded">Запитайте нас</NuxtLink>
           </li>
         </ul>
       </div>
