@@ -1,6 +1,6 @@
 <template>
   <section class="relative py-8 bg-customColors.background">
-    <h2 class="text-center text-3xl font-bold text-customColors.light mb-6">Customer Reviews</h2>
+    <h2 class="text-center text-3xl font-bold text-customColors.light mb-6">Відгуки</h2>
 
     <!-- Add Review Button -->
     <div class="text-center mb-6">
