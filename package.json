@@ -12,6 +12,8 @@
   "dependencies": {
     "@nuxt/typescript-build": "^3.0.2",
     "@nuxt/ui": "^2.18.5",
+    "ag-grid-community": "^32.2.0",
+    "ag-grid-vue3": "^32.2.0",
     "dotenv": "^16.4.5",
     "esbuild": "^0.24.0",
     "h3": "^1.12.0",

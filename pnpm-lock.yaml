@@ -14,6 +14,12 @@ importers:
       '@nuxt/ui':
         specifier: ^2.18.5
         version: 2.18.5(magicast@0.3.5)(rollup@4.22.4)(vite@5.4.7(@types/node@22.5.5)(terser@5.33.0))(vue@3.5.8(typescript@5.6.2))(webpack-sources@3.2.3)
+      ag-grid-community:
+        specifier: ^32.2.0
+        version: 32.2.0
+      ag-grid-vue3:
+        specifier: ^32.2.0
+        version: 32.2.0(typescript@5.6.2)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -1594,6 +1600,15 @@ packages:
     resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+
+  ag-charts-types@10.2.0:
+    resolution: {integrity: sha512-PUqH1QtugpYLnlbMdeSZVf5PpT1XZVsP69qN1JXhetLtQpVC28zaj7ikwu9CMA9N9b+dBboA9QcjUQUJZVUokQ==}
+
+  ag-grid-community@32.2.0:
+    resolution: {integrity: sha512-zr29DGo6U4JR6pSOgZrZWuN1CTWdpUCfZWWpF47us6MzdFWGN5gcdiXGw40wg9XMGacShNX1aW8o33S4yVkzMw==}
+
+  ag-grid-vue3@32.2.0:
+    resolution: {integrity: sha512-N41aH9xgfLpv6ZMCnhWfywYuX9BG+pI3L6ad5JL2fwo8JWw9tbu1n9LPtReP6LvqVQeiq8k/m5U2M4ZfT51bxA==}
 
   agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -5971,6 +5986,19 @@ snapshots:
       acorn: 8.12.1
 
   acorn@8.12.1: {}
+
+  ag-charts-types@10.2.0: {}
+
+  ag-grid-community@32.2.0:
+    dependencies:
+      ag-charts-types: 10.2.0
+
+  ag-grid-vue3@32.2.0(typescript@5.6.2):
+    dependencies:
+      ag-grid-community: 32.2.0
+      vue: 3.5.8(typescript@5.6.2)
+    transitivePeerDependencies:
+      - typescript
 
   agent-base@6.0.2:
     dependencies:
