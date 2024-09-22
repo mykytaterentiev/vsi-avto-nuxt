@@ -51,11 +51,11 @@
 
 <script setup>
 import { ref } from 'vue';
-import { useToast } from 'vue-toastification';
+import Toastification from 'vue-toastification';
 import NavBar from '~/components/NavBar.vue';
 import { carPartSchema } from '~/server/models/CarPart';
 
-const toast = useToast();
+const toast = Toastification.useToast(); 
 
 const formData = ref({
   name: '',

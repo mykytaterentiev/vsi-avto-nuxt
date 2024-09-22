@@ -33,7 +33,7 @@
   
   <script setup>
   import { ref, defineEmits, defineProps } from 'vue';
-  import { useToast } from 'vue-toastification';
+  import Toastification from 'vue-toastification';
   
   // Accept the isVisible prop
   const props = defineProps({
@@ -44,7 +44,7 @@
   });
   
   const emit = defineEmits(['close']);
-  const toast = useToast();
+  const toast = Toastification.useToast(); 
   
   const formData = ref({
     name: '',
