@@ -5,7 +5,7 @@
   
       <!-- Content -->
       <div class="relative z-10">
-        <h1 class="text-4xl md:text-6xl font-benzin mb-4">Запчастини для вашого авто</h1>
+        <h1 class="text-4xl md:text-6xl font-benzin mb-4">Запчастини для вашого авто!</h1>
         <p class="text-lg md:text-2xl mb-8">Знайдіть найкращі автозапчастини для ваших потреб</p>
         <NuxtLink to="/parts-selection" class="inline-block bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-secondary-light transition duration-300">
           Підібрати автозапчастину
