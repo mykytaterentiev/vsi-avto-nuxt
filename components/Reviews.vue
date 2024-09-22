@@ -9,7 +9,7 @@
           @click="toggleModal"
           class="bg-primary text-white py-2 px-6 rounded-lg hover:bg-secondary-light transition duration-300"
         >
-          Add Review
+         Надіслати відгук
         </button>
       </div>
   

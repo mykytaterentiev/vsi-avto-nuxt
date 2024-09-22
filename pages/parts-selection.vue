@@ -3,31 +3,31 @@
   <div>
     <NavBar />
     <main class="p-8 max-w-lg mx-auto">
-      <h1 class="text-3xl font-bold text-center mb-6">Submit Car Part Request</h1>
+      <h1 class="text-3xl font-bold text-center mb-6">Надіслати Запит</h1>
 
       <form @submit.prevent="submitForm" class="bg-white shadow-md rounded-lg p-6 space-y-4">
         <div>
-          <label class="block text-sm font-semibold mb-2">Name</label>
+          <label class="block text-sm font-semibold mb-2">ім'я</label>
           <input v-model="formData.name" type="text" class="w-full p-2 border rounded" required />
         </div>
 
         <div>
-          <label class="block text-sm font-semibold mb-2">Phone</label>
+          <label class="block text-sm font-semibold mb-2">Телефон</label>
           <input v-model="formData.phone" type="text" class="w-full p-2 border rounded" required />
         </div>
 
         <div>
-          <label class="block text-sm font-semibold mb-2">Make</label>
+          <label class="block text-sm font-semibold mb-2">Марка</label>
           <input v-model="formData.make" type="text" class="w-full p-2 border rounded" required />
         </div>
 
         <div>
-          <label class="block text-sm font-semibold mb-2">Model</label>
+          <label class="block text-sm font-semibold mb-2">Модель</label>
           <input v-model="formData.model" type="text" class="w-full p-2 border rounded" required />
         </div>
 
         <div>
-          <label class="block text-sm font-semibold mb-2">Year</label>
+          <label class="block text-sm font-semibold mb-2">Рік</label>
           <input v-model="formData.year" type="number" class="w-full p-2 border rounded" required />
         </div>
 
@@ -37,12 +37,12 @@
         </div>
 
         <div>
-          <label class="block text-sm font-semibold mb-2">Request</label>
+          <label class="block text-sm font-semibold mb-2">Запит</label>
           <textarea v-model="formData.request" class="w-full p-2 border rounded" required></textarea>
         </div>
 
         <button type="submit" class="bg-primary text-white w-full py-2 px-4 rounded-lg hover:bg-secondary-light">
-          Submit
+          Надіслати
         </button>
       </form>
     </main>

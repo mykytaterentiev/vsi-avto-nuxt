@@ -2,17 +2,17 @@
     <div>
       <NavBar />
       <main class="p-8">
-        <h1 class="text-4xl font-bold text-center mb-8">Admin Dashboard</h1>
+        <h1 class="text-4xl font-bold text-center mb-8">Панель Адміна</h1>
         <section>
-          <h2 class="text-2xl font-bold mb-4">Car Parts</h2>
+          <h2 class="text-2xl font-bold mb-4">Запчастмни</h2>
           <CarPartsTable />
         </section>
         <section class="mt-10">
-          <h2 class="text-2xl font-bold mb-4">Contacts</h2>
+          <h2 class="text-2xl font-bold mb-4">Запити</h2>
           <ContactTable />
         </section>
         <section class="mt-10">
-          <h2 class="text-2xl font-bold mb-4">Reviews</h2>
+          <h2 class="text-2xl font-bold mb-4">Відгуки</h2>
           <ReviewsTable />
         </section>
       </main>

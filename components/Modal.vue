@@ -4,27 +4,27 @@
     <div v-if="isVisible" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div class="bg-white rounded-lg p-6 w-full max-w-lg relative">
         <button @click="closeModal" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800">&times;</button>
-        <h3 class="text-2xl font-bold mb-4">Leave a Review</h3>
+        <h3 class="text-2xl font-bold mb-4">Залишити Відгук</h3>
   
         <form @submit.prevent="submitReview">
           <div class="mb-4">
-            <label class="block mb-1 text-sm font-semibold">Name</label>
+            <label class="block mb-1 text-sm font-semibold">Ім'я</label>
             <input v-model="formData.name" type="text" class="w-full p-2 border border-gray-300 rounded" required />
           </div>
           <div class="mb-4">
-            <label class="block mb-1 text-sm font-semibold">Message</label>
+            <label class="block mb-1 text-sm font-semibold">Відгук</label>
             <textarea v-model="formData.message" class="w-full p-2 border border-gray-300 rounded" required></textarea>
           </div>
           <div class="mb-4">
-            <label class="block mb-1 text-sm font-semibold">Rating</label>
+            <label class="block mb-1 text-sm font-semibold">Оцінка</label>
             <select v-model="formData.rating" class="w-full p-2 border border-gray-300 rounded" required>
-              <option disabled value="">Select a rating</option>
+              <option disabled value="">Оцінити</option>
               <option v-for="star in 5" :key="star" :value="star">{{ star }} Star</option>
             </select>
           </div>
   
           <button type="submit" class="bg-primary text-white py-2 px-6 rounded-lg hover:bg-secondary-light transition duration-300">
-            Submit
+            Відправити
           </button>
         </form>
       </div>
@@ -65,7 +65,7 @@
         method: 'POST',
         body: formData.value,
       });
-      toast.success('Review submitted successfully!');
+      toast.success('Відгук Надіслано!');
       formData.value = {
         name: '',
         message: '',
@@ -73,7 +73,7 @@
       };
       closeModal();
     } catch (error) {
-      toast.error('Error submitting review. Please try again.');
+      toast.error('Помилка відправлення відгуку');
     }
   };
   </script>  

@@ -7,16 +7,16 @@
         <!-- Desktop menu -->
         <ul class="hidden md:flex space-x-8">
           <li>
-            <NuxtLink to="/" class="hover:text-secondary-light">Home</NuxtLink>
+            <NuxtLink to="/" class="hover:text-secondary-light">Головна</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/about" class="hover:text-secondary-light">About</NuxtLink>
+            <NuxtLink to="/about" class="hover:text-secondary-light">Про Нас</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/services" class="hover:text-secondary-light">Services</NuxtLink>
+            <NuxtLink to="/services" class="hover:text-secondary-light">Сервіси</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/contact" class="hover:text-secondary-light">Contact</NuxtLink>
+            <NuxtLink to="/contact" class="hover:text-secondary-light">Запитати</NuxtLink>
           </li>
         </ul>
   
