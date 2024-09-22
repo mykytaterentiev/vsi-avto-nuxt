@@ -33,12 +33,11 @@
 
 <script setup>
 import { ref } from 'vue';
-import Toastification from 'vue-toastification';
+import { useToast } from 'vue-toastification'; 
 import NavBar from '~/components/NavBar.vue';
 import Footer from '~/components/Footer.vue';
 import { contactSchema } from '~/server/models/contactSchema'; // Import the Zod validation schema
 
-const { useToast } = Toastification;
 const toast = useToast(); // Call useToast
 
 const formData = ref({
