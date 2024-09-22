@@ -10,7 +10,9 @@ export const carPartSchema = z.object({
   year: z.number().min(1900, 'Year must be a valid number'),
   vin: z.string().length(17, 'VIN must be exactly 17 characters'),
   request: z.string().min(1, 'Request details are required'),
-  createdAt: z.date().default(() => new Date())
+  createdAt: z.string().refine((val) => !isNaN(Date.parse(val)), {
+    message: "Invalid date format",
+  })
 });
 
 export type CarPart = z.infer<typeof carPartSchema>;

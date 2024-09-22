@@ -1,4 +1,3 @@
-<!-- pages/parts-selection.vue -->
 <template>
   <div>
     <NavBar />
@@ -55,7 +54,7 @@ import { useToast } from 'vue-toastification';
 import NavBar from '~/components/NavBar.vue';
 import { carPartSchema } from '~/server/models/CarPart';
 
-const toast = useToast(); // Call useToast
+const toast = useToast();
 
 const formData = ref({
   name: '',
@@ -65,10 +64,14 @@ const formData = ref({
   year: '',
   vin: '',
   request: '',
+  // Add createdAt field here to be generated when the form is submitted
 });
 
 const submitForm = async () => {
   try {
+    // Add createdAt field automatically before validation
+    formData.value.createdAt = new Date().toISOString();
+
     // Validate the formData using Zod
     const result = carPartSchema.safeParse(formData.value);
     if (!result.success) {
@@ -78,12 +81,15 @@ const submitForm = async () => {
       return;
     }
 
+    // Submit the form data to the server
     await $fetch('/api/cars/post', {
       method: 'POST',
       body: result.data,
     });
 
     toast.success('Car part request submitted successfully!');
+    
+    // Reset the form data after successful submission
     formData.value = {
       name: '',
       phone: '',
