@@ -28,6 +28,7 @@
     { field: 'year', headerName: 'Year', sortable: true, filter: 'agNumberColumnFilter' },
     { field: 'vin', headerName: 'VIN', sortable: true, filter: 'agTextColumnFilter' },
     { field: 'request', headerName: 'Request', sortable: true, filter: 'agTextColumnFilter' },
+    { field: 'phone', headerName: 'Phone', sortable: true, filter: 'agTextColumnFilter' },
     { field: 'createdAt', headerName: 'Created At', sortable: true, sort: 'desc' },
   ]);
   
@@ -65,12 +66,14 @@
         year: part.year,
         vin: part.vin,
         request: part.request,
+        phone: part.phone,
         createdAt: new Date(part.createdAt)
       })) : [];
       
     } catch (error) {
       console.error('Error fetching car parts:', error);
     }
+    console.log(rowData.value);
   };
   
   // Grid ready event to fetch data
