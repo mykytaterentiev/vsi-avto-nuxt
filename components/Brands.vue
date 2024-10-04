@@ -20,7 +20,7 @@
   
           <!-- Brand 3 -->
           <div class="flex justify-center">
-            <img src="/images/wix.png" alt="Wix Logo" class="h-24">
+            <img src="/images/wix_logo.png" alt="Wix Logo" class="h-24">
           </div>
         </div>
       </div>
