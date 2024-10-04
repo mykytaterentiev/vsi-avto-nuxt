@@ -14,6 +14,7 @@
         </div>
         <Services />
         <Reviews />
+        <Brands />
         <Footer />
       </main>
     </div>
@@ -24,6 +25,7 @@
   import Banner from '~/components/Banner.vue';
   import Services from '~/components/Services.vue';
   import Reviews from '~/components/Reviews.vue';
+  import Brands from '~/components/Brands.vue';
   import Footer from '~/components/Footer.vue';
   </script>
   
