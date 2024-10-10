@@ -10,20 +10,20 @@
     <div class="relative z-10 flex flex-col items-center">
       <h2 class="text-4xl font-bold mb-12">Наші Послуги</h2>
 
-      <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6 w-full">
+      <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 w-full">
         <!-- Service 1 -->
-        <div class="bg-customColors-kolya text-white rounded-lg p-6 shadow-md flex-grow max-w-lg w-full text-center">
-          <h3 class="text-2xl font-semibold mb-2">Високоякісні автозапчастини для автомобілів.</h3>
+        <div class="bg-customColors-kolya text-white rounded-2xl p-6 shadow-md w-full md:w-1/3 h-32 flex items-center justify-center text-center mx-2">
+          <h3 class="text-xl font-semibold">Високоякісні автозапчастини для автомобілів.</h3>
         </div>
 
         <!-- Service 2 -->
-        <div class="bg-customColors-kolya text-white rounded-lg p-6 shadow-md flex-grow max-w-lg w-full text-center">
-          <h3 class="text-2xl font-semibold mb-2">Швидка та надійна доставка.</h3>
+        <div class="bg-customColors-kolya text-white rounded-2xl p-6 shadow-md w-full md:w-1/3 h-32 flex items-center justify-center text-center mx-2">
+          <h3 class="text-xl font-semibold">Швидка та надійна доставка.</h3>
         </div>
 
         <!-- Service 3 -->
-        <div class="bg-customColors-kolya text-white rounded-lg p-6 shadow-md flex-grow max-w-lg w-full text-center">
-          <h3 class="text-2xl font-semibold mb-2">Відмінне обслуговування клієнтів.</h3>
+        <div class="bg-customColors-kolya text-white rounded-2xl p-6 shadow-md w-full md:w-1/3 h-32 flex items-center justify-center text-center mx-2">
+          <h3 class="text-xl font-semibold">Відмінне обслуговування клієнтів.</h3>
         </div>
       </div>
     </div>
