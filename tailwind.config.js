@@ -21,6 +21,7 @@ export default {
           pale: '#c0ae8f',
           salmon: '#ebad89',
           peach: '#e4a47c',
+          kolya: '#c75929'
         },
       },
       fontFamily: {
