@@ -1,14 +1,12 @@
 <template>
   <section
-    class="relative bg-cover bg-center bg-no-repeat py-16 text-white"
-    :style="{ backgroundImage: `url('/images/services.jpg')` }"
-  >
+    class="relative bg-cover bg-center bg-no-repeat py-16 text-white" >
     <!-- Overlay for better contrast -->
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="absolute inset-0 bg-black bg-opacity-0"></div>
 
     <!-- Content -->
     <div class="relative z-10 flex flex-col items-center">
-      <h2 class="text-4xl font-bold mb-12">Наші Послуги</h2>
+      <h2 class="text-4xl text-black font-bold mb-12">Наші Послуги</h2>
 
       <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 w-full">
         <!-- Service 1 -->

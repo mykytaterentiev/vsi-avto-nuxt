@@ -9,7 +9,7 @@
       </p>
       <div class="flex justify-center mb-12">
         <NuxtLink to="/parts-selection" class="inline-block bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-secondary-light transition duration-300">
-          Підібрати автозапчастину
+          Підібрати автозапчастини
         </NuxtLink>
       </div>
       <Services />
