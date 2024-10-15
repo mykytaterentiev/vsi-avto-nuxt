@@ -6,7 +6,7 @@
     <div class="text-center mb-6">
       <button
         @click="toggleModal"
-        class="bg-primary text-white py-2 px-6 rounded-lg hover:bg-secondary-light transition duration-300"
+        class="bg-primary text-white py-2 px-6 rounded-lg hover:bg-customColors-kolya transition duration-300"
       >
         Надіслати відгук
       </button>

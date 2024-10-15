@@ -8,7 +8,7 @@
         Ми пропонуємо широкий асортимент автозапчастин найкращої якості за доступними цінами.
       </p>
       <div class="flex justify-center mb-12">
-        <NuxtLink to="/parts-selection" class="inline-block bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-secondary-light transition duration-300">
+        <NuxtLink to="/parts-selection" class="inline-block bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-customColors-kolya transition duration-300">
           Підібрати автозапчастини
         </NuxtLink>
       </div>
