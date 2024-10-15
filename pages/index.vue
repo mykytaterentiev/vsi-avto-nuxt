@@ -5,7 +5,7 @@
     <main class="p-8 flex-grow">
       <h1 class="text-4xl font-bold text-center mb-4">Чому обирають нас?</h1>
       <p class="text-lg text-center mb-8">
-        Ми пропонуємо широкий асортимент автозапчастин найкращої якості за доступними цінами.
+        Ми пропонуємо широкий асортимент автозапчастин найкращої якості за доступними цінами
       </p>
       <div class="flex justify-center mb-12">
         <NuxtLink to="/parts-selection" class="inline-block bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-customColors-kolya transition duration-300">
