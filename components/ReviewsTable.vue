@@ -25,6 +25,7 @@ const columnDefs = ref([
   { field: 'name', headerName: 'Name', sortable: true, filter: 'agTextColumnFilter' },
   { field: 'message', headerName: 'Message', sortable: true, filter: 'agTextColumnFilter' },
   { field: 'createdAt', headerName: 'Created At', sortable: true, sort: 'desc' },
+  { field: 'rating', headerName: 'Rating', sortable: true, filter: 'agNumberColumnFilter' },
   {
     field: 'isApproved',
     headerName: 'Approved',
@@ -70,6 +71,7 @@ const ReviewSchema = z.object({
   name: z.string(),
   message: z.string(),
   createdAt: z.date().default(() => new Date()),
+  rating: z.number().int().min(1).max(5),
   isApproved: z.boolean().default(false),
 });
 
@@ -86,6 +88,7 @@ const fetchReviews = async () => {
         name: review.name,
         message: review.message,
         createdAt: new Date(review.createdAt),
+        rating: review.rating,
         isApproved: review.isApproved, // Ensure this field is fetched and used
       }));
     } else {
