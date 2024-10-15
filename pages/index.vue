@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-background min-h-screen">
+  <div class="bg-background flex flex-col min-h-screen">
     <NavBar />
     <Banner />
-    <main class="p-8">
+    <main class="p-8 flex-grow">
       <h1 class="text-4xl font-bold text-center mb-4">Чому обирають нас?</h1>
       <p class="text-lg text-center mb-8">
         Ми пропонуємо широкий асортимент автозапчастин найкращої якості за доступними цінами.
@@ -15,8 +15,8 @@
       <Services />
       <Reviews />
       <Brands />
-      <Footer />
     </main>
+    <Footer />
   </div>
 </template>
 

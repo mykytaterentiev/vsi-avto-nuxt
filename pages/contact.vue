@@ -1,8 +1,7 @@
-<!-- pages/contact.vue -->
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen">
     <NavBar />
-    <main class="p-8 max-w-lg mx-auto">
+    <main class="p-8 max-w-lg mx-auto flex-grow">
       <h1 class="text-3xl font-bold text-center mb-6">Запитайте нас</h1>
 
       <form @submit.prevent="submitForm" class="bg-white shadow-md rounded-lg p-6 space-y-4">
@@ -36,9 +35,9 @@ import { ref } from 'vue';
 import { useToast } from 'vue-toastification';
 import NavBar from '~/components/NavBar.vue';
 import Footer from '~/components/Footer.vue';
-import { contactSchema } from '~/server/models/contactSchema'; // Import the Zod validation schema
+import { contactSchema } from '~/server/models/contactSchema';
 
-const toast = useToast(); // Call useToast
+const toast = useToast();
 
 const formData = ref({
   name: '',
@@ -48,41 +47,29 @@ const formData = ref({
 
 const submitForm = async () => {
   try {
-    // Validate the form data using Zod schema
     const result = contactSchema.safeParse(formData.value);
 
-    // Check if validation failed
     if (!result.success) {
-      // Show validation errors as toast messages
       result.error.errors.forEach(error => {
         toast.error(error.message);
       });
-      return; // Stop form submission if validation fails
+      return;
     }
 
-    // If validation passes, proceed with the API request
     await $fetch('/api/contact/post', {
       method: 'POST',
-      body: result.data, // Use the validated data from Zod
+      body: result.data,
     });
 
-    // Show success toast message
     toast.success('Contact request submitted successfully!');
-
-    // Reset form fields after successful submission
-    formData.value = {
-      name: '',
-      email: '',
-      message: '',
-    };
+    formData.value = { name: '', email: '', message: '' };
   } catch (error) {
     console.error('Error submitting form:', error);
-    // Show error toast if the form submission fails
     toast.error('Error submitting contact request. Please try again.');
   }
 };
 </script>
 
 <style scoped>
-/* Add any additional styling if necessary */
+/* Additional styling if necessary */
 </style>
