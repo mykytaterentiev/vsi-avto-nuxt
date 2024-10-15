@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative bg-cover bg-center bg-no-repeat py-16 text-white" >
+    class="relative bg-cover bg-center bg-no-repeat py-8 text-white" >
     <!-- Overlay for better contrast -->
     <div class="absolute inset-0 bg-black bg-opacity-0"></div>
 
