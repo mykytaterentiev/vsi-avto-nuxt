@@ -16,7 +16,7 @@
           <NuxtLink to="/services" class="hover:text-secondary-light">Сервіси</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/contact" class="hover:text-secondary-light">Запитати</NuxtLink>
+          <NuxtLink to="/contact" class="hover:text-secondary-light">Пропозиції</NuxtLink>
         </li>
       </ul>
 
@@ -44,7 +44,7 @@
           <NuxtLink @click="toggleMenu" to="/services" class="block py-2 hover:text-customColors.accent rounded">Послуги</NuxtLink>
         </li>
         <li>
-          <NuxtLink @click="toggleMenu" to="/contact" class="block py-2 hover:text-customColors.accent rounded">Запитайте нас</NuxtLink>
+          <NuxtLink @click="toggleMenu" to="/contact" class="block py-2 hover:text-customColors.accent rounded">Пропозиції</NuxtLink>
         </li>
       </ul>
     </div>
