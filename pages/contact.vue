@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col min-h-screen">
     <NavBar />
-    <main class="p-8 max-w-lg mx-auto flex-grow">
-      <h1 class="text-3xl font-bold text-center mb-6">Запитайте нас</h1>
+    <main class="p-8 max-w-4xl mx-auto flex-grow"> <!-- Changed max-w-lg to max-w-2xl -->
+      <h1 class="text-3xl font-bold text-center mb-6">Ваші побажання та пропозиції</h1>
 
       <form @submit.prevent="submitForm" class="bg-white shadow-md rounded-lg p-6 space-y-4">
         <div>
-          <label class="block text-sm font-semibold mb-2">ім'я</label>
+          <label class="block text-sm font-semibold mb-2">Ім’я</label>
           <input v-model="formData.name" type="text" class="w-full p-2 border rounded" />
         </div>
 
@@ -16,7 +16,7 @@
         </div>
 
         <div>
-          <label class="block text-sm font-semibold mb-2">Запит</label>
+          <label class="block text-sm font-semibold mb-2">Ваші побажання та пропозиції</label>
           <textarea v-model="formData.message" class="w-full p-2 border rounded"></textarea>
         </div>
 

@@ -28,7 +28,7 @@
           <CarPartsTable />
         </section>
         <section class="mt-10">
-          <h2 class="text-2xl font-bold mb-4">Запити</h2>
+          <h2 class="text-2xl font-bold mb-4">Пропозиції</h2>
           <ContactTable />
         </section>
         <section class="mt-10">
