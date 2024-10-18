@@ -1,1 +1,0 @@
-import{_ as t,o,c as r,a as s}from"./DpOTWwlS.js";const a={class:"bg-primary text-white text-center py-4"},_={__name:"Footer",setup(c){return(n,e)=>(o(),r("footer",a,e[0]||(e[0]=[s("p",null,"© 2024 VSI AVTO. All rights reserved.",-1)])))}},l=t(_,[["__scopeId","data-v-b7f3bbb3"]]);export{l as F};
