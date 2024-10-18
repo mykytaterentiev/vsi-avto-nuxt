@@ -6,7 +6,7 @@
 
       <form @submit.prevent="submitForm" class="bg-white shadow-md rounded-lg p-6 space-y-4">
         <div>
-          <label class="block text-sm font-semibold mb-2">ім'я</label>
+          <label class="block text-sm font-semibold mb-2">Ім'я</label>
           <input v-model="formData.name" type="text" class="w-full p-2 border rounded" required />
         </div>
 
