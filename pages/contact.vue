@@ -21,7 +21,7 @@
         </div>
 
         <button type="submit" class="bg-primary text-white w-full py-2 px-4 rounded-lg hover:bg-secondary-light">
-          Submit
+          Надіслати
         </button>
       </form>
     </main>
