@@ -19,9 +19,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'VSI AVTO - Best Auto Parts', // Custom title for the tab
+      title: 'VSI AVTO - Точний підбір запчастин за VIN',
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/images/logo.svg' }, // Favicon configuration
+        { rel: 'icon', type: 'image/svg+xml', href: '/images/logo.svg' }, 
       ],
     },
   },
