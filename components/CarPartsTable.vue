@@ -28,7 +28,7 @@
     { field: 'year', headerName: 'Year', sortable: true, filter: 'agNumberColumnFilter' },
     { field: 'vin', headerName: 'VIN', sortable: true, filter: 'agTextColumnFilter' },
     { field: 'request', headerName: 'Request', sortable: true, filter: 'agTextColumnFilter' },
-    { field: 'phone', headerName: 'Phone', sortable: true, filter: 'agTextColumnFilter' },
+    { field: 'Phone', headerName: 'Phone', sortable: true, filter: 'agTextColumnFilter' },
     { field: 'createdAt', headerName: 'Created At', sortable: true, sort: 'desc' },
   ]);
   
